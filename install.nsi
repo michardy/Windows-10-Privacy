@@ -10,6 +10,7 @@ Section
 WriteRegDWORD HKLM "SYSTEM\CurrentControlSet\Services\DiagTrack" "start" 0x00000004
 WriteRegDWORD HKLM "Microsoft\Windows\CurrentVersion\AdvertisingInfo" "Enabled" 0x00000000
 WriteRegDWORD HKLM "SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config" "AutoConnectAllowedOEM" 0x00000000
+WriteRegDWORD HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection" "AllowTelemetry" 0x00000000
 
 MessageBox MB_YESNO|MB_ICONQUESTION "System needs to be rebooted to apply these changes.  Reboot now?" IDNO +2
   Reboot
